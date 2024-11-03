@@ -1,66 +1,42 @@
-Fast Food, Rapido y sabroso es una empresa de comidas rápidas, que ha tenido un muy buen comienzo logrando la apertura de nuevas sucursales. No obstante, tiene información dispersa en diversos archivos y documentos manuales.
-Iniciamos construyendo la base de datos con los archivos existentes, empleando el lenguaje de manipulación de datos (DML) con el fin de formular consultas SQL complejas y optimizar la base para el análisis mediante SQL Server.
-También utilizamos el lenguaje de definición de datos (DDL) para garantizar que la base de datos de la empresa evolucione, garantizando su viabilidad y escalabilidad futura.
-Hicimos una normalización de los datos, con el fin de eliminar redundancias y mejorar su integridad.
-Implementamos bases de datos dimensionales, que facilitan la exploración y el análisis de  los datos multidimensionales, como ventas por producto, sucursal y periodo de tiempo.
+**Resumen del Proyecto de Base de Datos para "Fast Food, Rápido y Sabroso"**
 
-Por último con queries avanzadas contestamos consultas que resuelven preguntas cruciales para el buen funcionamiento de la empresa, con el fin de tomar decisiones basadas en datos e informadas.
+Fast Food, Rápido y Sabroso es una empresa de comidas rápidas que, tras un inicio exitoso, ha logrado abrir varias sucursales. Sin embargo, enfrenta el reto de manejar información dispersa en múltiples archivos y documentos manuales. Para abordar esta situación, construimos una base de datos que centraliza los datos existentes, utilizando SQL Server y aplicando el Lenguaje de Manipulación de Datos (DML) y el Lenguaje de Definición de Datos (DDL). Este proyecto busca optimizar la base de datos para análisis y garantizar su viabilidad a largo plazo.
 
-Objetivos Alcanzados:
-Con este proyecto logramos un avance significativo tanto para la empresa como para nuestro aprendizaje, lo cual se irá desgranando mientras se avanza en este informe.
-Iniciamos con la creación de la base de datos, creación de tablas y poblarlas de datos, donde aplicamos los fundamentos estructurales de una base de datos SQL Server, usando DDL en la creación de tablas, su estructura y objetos , utilizando consignas como CREATE, ALTER, TRUCACTE.
-Utilizamos el lenguaje DML  para realizar operaciones en los datos dentro de la BD, usando sentencias como INSERT, UPDATE Y DELETE,  para la inserción, modificación, eliminación y selección de datos.
-Definimos el esquema de la BD, con el fin de dar organización, seguridad, facilidad de mantenimiento, colaboración y  evitar conflicto de nombres.
-Utilizamos consultas de agregación con la cláusula GROUP BY, con el fin de responder consultas específicas, relacionadas con promedio, conteo, valores máximos o mínimos, con las funciones AVG, SUM,COUNT, MAX , MIN. También utilizamos TOP y DISTINCT.
-Utilizamos JOINs  con múltiples tablas y combinamos información de las mismas y para obtener resultados más complejos usamos la cláusula UNION. Esto nos permitió consultar y relacionar datos de una manera más eficiente. utilizamos  sobre todo INNER JOIN Y LEFT JOIN.
- 
-Recomendaciones estratégicas
+1. **Construcción de la Base de Datos**:
+   - Comenzamos estructurando la base de datos desde cero, definiendo su esquema y utilizando comandos DDL como `CREATE`, `ALTER` y `TRUNCATE` para crear las tablas y objetos necesarios. Esto incluyó la normalización de los datos para eliminar redundancias y mejorar la integridad.
+   - La organización del esquema de la base de datos, junto con el uso de claves primarias y foráneas, permitió estructurar las relaciones entre tablas y asegurar la consistencia de la información.
+   
+2. **Gestión de Datos**:
+   - Con el DML, realizamos operaciones básicas como `INSERT`, `UPDATE` y `DELETE` para poblar y manipular los datos en las tablas, implementando además consultas de agregación (`GROUP BY`, `SUM`, `COUNT`, `AVG`, `MAX`, `MIN`) para responder preguntas específicas sobre los datos.
+   - Para mejorar la precisión, implementamos condiciones de filtrado avanzado (`HAVING`), y en consultas complejas, combinamos varias tablas mediante `JOINs`, especialmente `INNER JOIN` y `LEFT JOIN`, para obtener información consolidada.
 
-Es recomendable el uso de la tecnología, es decir aplicaciones como Waze donde los mensajeros pueden estar informados en tiempo real sobre el tráfico, el clima y las rutas más rápidas y eficientes
-Verificar la capacidad de los mensajeros en cuanto a manejo y optimización del tiempo, lo cual puede mejorar con una capacitación, en este caso también se puede hacer uso de la tecnología como aplicaciones de agenda virtual, o gestión de alarmas.
-Establecer un sistema de incentivos si no existe, hacer una auditoría para evaluar si las zonas con mayor demanda están atendidas
-Monitorear continuamente a los mensajeros haciendo uso de la tecnología GPS y medir  los tiempos de entrega, al igual que  estar muy atentos al feedback de los clientes para identificar áreas de mejora ya sea mediante encuestas o incentivos.
-Que haya una comunicación constante entre los mensajeros y las sucursales al igual que entre los mismos mensajeros para agilizar las entregas en caso de cancelaciones.
-Hacer un ajuste constante de las estrategias en función de la mejora continua y eficiencia en las entregas.
+3. **Primer Avance**:
+   - Se construyó la base de datos con especificaciones para un crecimiento controlado y una nomenclatura estandarizada (CamelCase) para una mejor organización.
+   - Con DDL, creamos las tablas y relaciones clave, asegurándonos de seleccionar los tipos de datos correctos (como `INT`, `VARCHAR`, `DATETIME`) y especificando columnas como `NOT NULL` para evitar valores vacíos.
 
+4. **Segundo Avance**:
+   - Poblamos las tablas y ejecutamos consultas básicas. Las operaciones incluyeron:
+     - `INSERT` para añadir datos.
+     - `UPDATE` para modificar registros, como el ajuste de precios y direcciones.
+     - `DELETE` para remover registros específicos.
+   - También implementamos restricciones de integridad de datos (`FOREIGN KEY`) y ejecutamos consultas agregadas con `GROUP BY` para obtener resúmenes, como el número de empleados por departamento.
 
-Fortalecer los canales digitales, mejorando la experiencia del usuario, optimizando la App y la página web para que sea más intuitiva y funcional. Ofrecer promociones exclusivas de estos canales para incentivar su uso.
-Hacer una auditoría a estos canales Verificando los tiempos de carga tanto de la web como de la App , sus tiempos y tipos de pago, tiempo de respuesta a las solicitudes y pedidos, hacer seguimiento al feedback de los usuarios y comprobar que el proceso de pago sea sencillo, intuitivo y simple. 
-Hacer campañas de marketing y publicidad dirigida, no solo para estos canales, hacer uso de los datos para hacer una adecuada segmentación de los clientes teniendo en cuenta su experiencia, comportamientos y preferencias de compra.
-Optimizar las operaciones y procesos de la empresa en pro de mejorar la satisfacción del cliente.
+5. **Tercer Avance**:
+   - Ejecutamos consultas avanzadas para obtener insights detallados sobre las ventas y el comportamiento de los clientes. Utilizamos `GROUP BY`, `SUM`, `AVG`, `COUNT`, `TOP`, `MIN`, y `MAX` para preguntas como el total de ventas, el promedio de precios y el análisis de facturación.
+   - También aplicamos `CAST` para mejorar la precisión en los precios y realizamos análisis de tendencias de ventas por períodos de tiempo específicos.
 
+6. **Cuarto Avance**:
+   - En este avance, trabajamos con múltiples tablas usando `JOINs` para consultas complejas, logrando relacionar los datos de manera eficiente. Usamos alias y la combinación de tablas (`INNER JOIN`, `LEFT JOIN`) para obtener detalles sobre órdenes, productos y categorías.
+   - Estas consultas avanzadas ayudaron a comprender patrones de demanda y ventas en diferentes canales y periodos.
 
-El nivel de ingresos  por empleado es relativamente parejo indicando una productividad y rendimiento constantes, no obstante esto también puede implicar estancamiento o falta de competencia, motivación o liderazgo entre ellos. Aunque esto se debe verificar teniendo en cuenta:
-Patrones o tendencias específicas o periódicas, productividad de acuerdo a fechas específicas o estacionales.
-Se debe comparar su desempeño respecto a la competencia directa y a los estándares de la industria para saber si están en línea, por encima o debajo del promedio.
-Monitorear los tiempos, la relación horas trabajadas versus ingresos y su  incidencia en la productividad.
-Tener en cuenta la equidad en las cargas laborales y responsabilidades asignadas, lo cual puede influir en su desempeño y actitud.
-Brindar un buen ambiente laboral, saludable y equilibrado, acompañado de un plan de desarrollo individual, capacitación y un plan de incentivos donde prime el desarrollo personal del empleado y su alineación con los objetivos y misión de la empresa.
+7. **Consultas Finales**:
+   - Se realizaron consultas que respondieron preguntas clave para la toma de decisiones. Algunas de las más destacadas fueron:
+     - **Eficiencia de Mensajeros**: Calculamos el tiempo promedio de entrega de pedidos, revelando una media de 30 minutos. Esto sugiere oportunidades para mejorar la eficiencia de las entregas.
+     - **Ventas por Canal**: El análisis mostró que el canal presencial genera mayores ingresos. Sin embargo, los canales en línea y la App móvil tienen un rendimiento inferior, lo que presenta una oportunidad de mejora en marketing y experiencia del usuario.
+     - **Productividad por Empleado**: El ingreso generado por cada empleado resultó ser uniforme, lo cual sugiere una productividad constante, pero también posibles áreas de mejora en liderazgo y motivación.
+     - **Demanda por Horario y Día**: Observamos cómo varía la demanda a lo largo del día, identificando horarios pico que pueden orientar el plan de personal y la disponibilidad de productos.
+     - **Comparación de Ventas Mensuales**: Utilizamos funciones para comparar ingresos mensuales, lo cual proporciona un análisis de tendencias y permite planificar con anticipación.
+     - **Análisis de Fidelidad del Cliente**: Estimamos la proporción de clientes recurrentes versus nuevos clientes, analizando su frecuencia de compra.
 
-
-Como se había mencionado, se debe identificar el por qué de los valores nulos y corregirlos si es posible. 
-Se debe eliminar los registros nulos si no son representativos respecto a la importancia, calidad  y cantidad de los datos totales.
-Se puede tratar de llenar los campos teniendo en cuenta el valor histórico del producto.
-Mejorar y hacer una revisión de los procesos de recolección de datos con el fin de ser capturados de manera precisa y completa, para garantizar la integridad y calidad de los mismos.
-Se debe estar monitoreando este proceso con el fin de identificar y abordar los valores nulos que puedan surgir.
-
-
-Invertir en un estudio de mercado para identificar oportunidades de crecimiento, al igual que comparar las ventas Y estrategias de marketing  respecto a la competencia para identificar áreas de mejora.
-Contemplar la creación de nuevos productos y/o servicios.
-Mejorar la experiencia del usuario, crear programas de fidelización, entregas más eficientes o servicios complementarios.
-Como estrategias de marketing, se pueden crear campañas segmentadas ,a través de las redes sociales o email marketing fortaleciendo la presencia en línea, contratar micro influencers  y hacer un uso eficiente de whatsapp Business y Google mi negocio que pueden incrementar el número de leads y llegar a nuevos clientes.
-
-Consulta 6:
-Se  recomienda realizar programas de fidelización, descuentos, puntos o productos gratuitos, ofertas personalizadas, al igual que mejorar la atención al cliente,
-Realizar campañas de retargeting, hacer un monitoreo, evaluación y ajuste continuo respecto a las estrategias de fidelización.
-Optimización y sostenibilidad
-Para que la base de datos fuera óptima, elegimos un sistema de base de datos relacional SGBD, porque  permite tener integridad y consistencia de los datos, factor importante para empresas que utilizan pasarelas de pagos como FAST FOOD.
-Este sistema tiene una estructura de datos definida, donde usamos el modelo relacional, también nos permite realizar consultas complejas y relaciones entre datos, como Órdenes, Categorías, Clientes, Sucursales, empleados, entre otras.
-Nos permitió hacer  análisis detallado de datos y generar informes operativos y estratégicos.
-Para optimizar la base de datos, las tablas se normalizaron hasta la Tercera Forma Normal con el fin de eliminar la redundancia y asegurar la integridad de los datos, 
-Se revisaron y estructuraron los datos para asegurar que cada tabla contiene información única y relevante, eliminando redundancias. Esto incluyó la normalización de la base de datos para minimizar la duplicación y garantizar la integridad referencial.
-Utilizamos JOINs con el fin de eliminar subconsultas innecesarias
-Para garantizar la sostenibilidad a largo plazo se han implementado estrategias como:
-Planificar actualizaciones y parches para el software de la BD, al igual que implementar políticas y normas de seguridad para proteger la BD. 
-Establecer políticas de copias de seguridad y su monitoreo, al igual que su capacidad para que sea escalable y acorde a las necesidades de la empresa 
-Implementa un marco de gobernanza de datos con el fin de garantizar la calidad, integridad y seguridad de los datos a lo largo de su ciclo de vida.
+**Resultados**:
+El proyecto permitió organizar y optimizar los datos de la empresa, consolidando su información en una base de datos bien estructurada y facilitando un análisis detallado que respalda decisiones informadas. A través de este informe se documentan los avances realizados, desafíos superados, y se presenta un análisis de los resultados que permite a Fast Food, Rápido y Sabroso aprovechar al máximo sus datos en su proceso de expansión.
