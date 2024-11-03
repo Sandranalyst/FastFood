@@ -1,7 +1,7 @@
-**Resumen del Proyecto de Base de Datos para "Fast Food, Rápido y Sabroso"**
 
 Fast Food, Rápido y Sabroso es una empresa de comidas rápidas que, tras un inicio exitoso, ha logrado abrir varias sucursales. Sin embargo, enfrenta el reto de manejar información dispersa en múltiples archivos y documentos manuales. Para abordar esta situación, construimos una base de datos que centraliza los datos existentes, utilizando SQL Server y aplicando el Lenguaje de Manipulación de Datos (DML) y el Lenguaje de Definición de Datos (DDL). Este proyecto busca optimizar la base de datos para análisis y garantizar su viabilidad a largo plazo.
 
+**Desarrollo del Proyecto**
 1. **Construcción de la Base de Datos**:
    - Comenzamos estructurando la base de datos desde cero, definiendo su esquema y utilizando comandos DDL como `CREATE`, `ALTER` y `TRUNCATE` para crear las tablas y objetos necesarios. Esto incluyó la normalización de los datos para eliminar redundancias y mejorar la integridad.
    - La organización del esquema de la base de datos, junto con el uso de claves primarias y foráneas, permitió estructurar las relaciones entre tablas y asegurar la consistencia de la información.
